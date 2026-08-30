@@ -1,0 +1,24 @@
+{
+  "item.tutorialmod.fluorite": "Fluorite",
+  "item.tutorialmod.raw_fluorite": "Fluorite Brute",
+  "item.tutorialmod.chisel_item": "Chisel",
+  "item.tutorialmod.strawberry": "Fraise",
+  "item.tutorialmod.gomu_gomu_no_mi": "Gomu Gomu No Mi",
+
+
+
+  "block.tutorialmod.fluorite_block": "Bloc de Fluorite",
+  "block.tutorialmod.fluorite_deepslate_ore": "Minerai des abîmes de Fluorite",
+  "block.tutorialmod.fluorite_nether_ore": "Minerai de Fluorite du Nether",
+  "block.tutorialmod.fluorite_end_ore": "Minerai de Fluorite l'End",
+  "block.tutorialmod.fluorite_ore": "Minerai de Fluorite",
+  "block.tutorialmod.raw_fluorite_block": "Bloc de Fluorite Brute",
+  "block.tutorialmod.granit_marin": "Bloc de Granit Marin",
+
+  "creativemodetab.tutorialmod.fluorite_items": "Items de Fluorite",
+  "creativemodetab.tutorialmod.fluorite_blocks": "Blocs de Fluorite",
+  "creativemodetab.tutorialmod.all_blue_items": "Items All Blue",
+  "creativemodetab.tutorialmod.all_blue_blocks": "Blocs All Blue"
+
+
+}

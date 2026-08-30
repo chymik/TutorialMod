@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fluorite",
+  "key": {
+    "R": "minecraft:prismarine",
+    "X": "minecraft:granite"
+  },
+  "pattern": [
+    "RX",
+    "XR"
+  ],
+  "result": {
+    "id": "tutorialmod:granit_marin"
+  }
+}

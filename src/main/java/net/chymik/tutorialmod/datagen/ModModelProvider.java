@@ -1,0 +1,39 @@
+package net.chymik.tutorialmod.datagen;
+
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.chymik.tutorialmod.block.ModBlocks;
+import net.chymik.tutorialmod.item.ModItems;
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
+
+public class ModModelProvider extends FabricModelProvider {
+    public ModModelProvider(FabricPackOutput output) {
+        super(output);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.RAW_FLUORITE_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_DEEPSLATE_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_NETHER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.FLUORITE_END_ORE);
+
+        blockModelGenerators.createTrivialCube(ModBlocks.GRANIT_MARIN);
+
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerators itemModelGenerators) {
+        itemModelGenerators.generateFlatItem(ModItems.FLUORITE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RAW_FLUORITE, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.CHISEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.STRAWBERRY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GOMU_GOMU_NO_MI, ModelTemplates.FLAT_ITEM);
+
+    }
+}

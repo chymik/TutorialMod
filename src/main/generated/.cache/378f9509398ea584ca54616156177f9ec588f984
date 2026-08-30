@@ -1,0 +1,8 @@
+// 26.1.2	-999999999-01-01T00:00:00	Tutorial Mod/Block Loot Tables
+774b2a0eeb2e6a3612241246d21dc25d4bf4a4f1 data/tutorialmod/loot_table/blocks/fluorite_block.json
+65a2fade4e21d953351037740a4e2883a1abcd99 data/tutorialmod/loot_table/blocks/fluorite_deepslate_ore.json
+ece76fce85ebdd301259f02c02ba4442d3cc4442 data/tutorialmod/loot_table/blocks/fluorite_end_ore.json
+6a57ca23911a2ba2d8eead9bca0f27480bb22751 data/tutorialmod/loot_table/blocks/fluorite_nether_ore.json
+015f8bea96efd56a3e0f029749de03d313a9de94 data/tutorialmod/loot_table/blocks/fluorite_ore.json
+6ce3869bdfcf726d1934bd9bcfaa7212f64746e0 data/tutorialmod/loot_table/blocks/granit_marin.json
+b44481bbca498a0f5121833a5ab06783f0c98f6f data/tutorialmod/loot_table/blocks/raw_fluorite_block.json
