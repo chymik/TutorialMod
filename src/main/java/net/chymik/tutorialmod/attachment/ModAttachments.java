@@ -7,11 +7,16 @@ import net.minecraft.resources.Identifier;
 import com.mojang.serialization.Codec;
 
 public class ModAttachments {
-    public static final AttachmentType<Boolean> A_MANGE_UN_FRUIT = AttachmentRegistry.create(
-            Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "a_mange_un_fruit"),
+    // Stocke le NOM du fruit mangé (ex: "gomu_gomu_no_mi"), pas juste un booléen.
+    // C'est ce qui manquait : avec un simple true/false, impossible de savoir QUEL
+    // fruit un joueur porte, donc impossible de retrouver "qui a le fruit X" pour
+    // /fdd reset ou pour le libérer à la mort. Absent = null = n'a mangé aucun fruit.
+    public static final AttachmentType<String> FRUIT_MANGE = AttachmentRegistry.create(
+            Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, "fruit_mange"),
             builder -> builder
-                    .initializer(() -> false)
-                    .persistent(Codec.BOOL)
+                    .initializer(() -> null)
+                    .persistent(Codec.STRING)
+            // toujours pas de .copyOnDeath() : la mort efface l'attache, exprès.
     );
 
     public static void registerModAttachments() {

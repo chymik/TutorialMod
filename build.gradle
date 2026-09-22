@@ -35,6 +35,17 @@ processResources {
 	}
 }
 
+loom {
+	runs {
+		client2 {
+			client()
+			displayName = "Minecraft Client 2"
+			programArguments.add("--username")
+			programArguments.add("Dev2")
+		}
+	}
+}
+
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 25
 }

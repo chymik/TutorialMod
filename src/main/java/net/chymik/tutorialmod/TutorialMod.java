@@ -2,6 +2,8 @@ package net.chymik.tutorialmod;
 
 import net.chymik.tutorialmod.attachment.ModAttachments;
 import net.chymik.tutorialmod.block.ModBlocks;
+import net.chymik.tutorialmod.command.ModCommands;
+import net.chymik.tutorialmod.config.ModConfig;
 import net.chymik.tutorialmod.creativemodtab.ModCreativeModeTabs;
 import net.chymik.tutorialmod.event.ModEvents;
 import net.chymik.tutorialmod.item.ModItems;
@@ -16,10 +18,12 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfig.charger();
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModAttachments.registerModAttachments();
 		ModEvents.registerModEvents();
+		ModCommands.registerModCommands();
 	}
 }
